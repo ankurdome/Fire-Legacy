@@ -1,0 +1,123 @@
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;}
+
+li {
+    float: left;}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;}
+
+li.dropdown {
+    display: inline-block;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="#">
+<style>
+.mySlides {display:none;}
+.BTN{BORDER-RADIUS:10%;}
+.om{background-color:orange;}
+</style>
+
+</head>
+<body>
+<img src="h.jpg" width="1000"><ul>
+ <center> <li><a href="webpage.html">Home</a></li>
+  <li><a href="gallery.html">gallery</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">about us </a>
+    <div class="dropdown-content">
+      <a href="#">works</a>
+      <a href="#">jobs</a>
+      <a href="#">events</a>
+    </div>
+  </li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">plans </a>
+    <div class="dropdown-content">
+      <a href="#">meet</a>
+      <a href="#">plan</a>
+      <a href="#">final solution</a>
+    </div>
+  </li><DIV CLASS="BTN"><CENTER><DIV CLASS="SEARCHBOX"><INPUT TYPE="TEXT" PLACEHOLDER="SEARCH"> <BUTTON>SEARCH</BUTTON></CENTER></DIV>
+</DIV>
+</ul><br><br>
+
+
+<BR>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="F1.jpg" style="width:100%">
+  <img class="mySlides" src="F2.jpg" style="width:100%">
+  <img class="mySlides" src="F3.jpg" style="width:100%">
+  <img class="mySlides" src="F4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<BR><BR>
+<P> <STRONG>FIRE LEGACY</STRONG> IS THE ORGANISATION WHICH WELCOMES YOUTH WITH INNOVATIVE AND CREATIVE IDEAS.THESE YOUNG MINDS CAN BE A MEMBER OF FIRE LEGACY BY CONTRIBUTING TO US.
+THEY JUST HAVE TO GIVE AN IDEA FOR MAKING A CITY WITH<B>NO DISCRIMINATION</B>.
+
+<BR><BR><BR>
+<div class="om"><h1>OUR MEMBERS</H1></DIV></center>
+<img src="s5.png" > <h1> ANKUR DOME</H1>
+<img src="s11.JPG"> <h1> SUJIT MEMANE</H1>
+<img src="s10.JPG"> <h1> HARSHAL DANDADE</H1><img src="s19.JPG" ALIGN="CENTER"><BR> 
+<h1> SHREERAJ CHIMANPURE</H1>
+
+
+    
+</center>
+
+</body>
